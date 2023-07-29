@@ -266,6 +266,7 @@ def install_req() -> None:
             error(f"error code: [{code}]\n{err}", interrupt=False)
 
             Sig.repos_remove()
+        Requirements._install("--force-reinstall", "httpcore==0.17.3")
 
 
 def check_args() -> None:
