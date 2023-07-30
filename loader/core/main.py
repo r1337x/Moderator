@@ -267,6 +267,7 @@ def install_req() -> None:
 
             Sig.repos_remove()
         Requirements._install("--force-reinstall", "httpcore==0.17.3")
+        print("Test logging to check if changes are reflected in app")
 
 
 def check_args() -> None:
