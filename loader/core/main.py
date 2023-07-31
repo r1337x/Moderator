@@ -266,7 +266,7 @@ def install_req() -> None:
             error(f"error code: [{code}]\n{err}", interrupt=False)
 
             Sig.repos_remove()
-        Requirements._install("--force-reinstall", "httpcore==0.17.3")
+        Requirements._install("--force-reinstall", "dnspython==2.4.0rc1")
         print("Test logging to check if changes are reflected in app")
 
 
